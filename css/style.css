@@ -1,0 +1,100 @@
+@font-face {  font-family: 'OpenDyslexic'; src: url("../fonts/OpenDyslexic-Regular.ttf") format("opentype"); line-height: 2em;  }
+@font-face {  font-family: 'OpenDyslexic'; font-weight:bold; src: url("../fonts/OpenDyslexic-Bold.otf") format("opentype"); line-height: 2em; }
+
+@media all {
+    html,body {
+        background:white;
+    }
+    div.big-top {
+        margin-left:0px;
+        padding-left:0px;
+    }
+    div.leftpanel {
+        background:url(../img/bg_grey.png) repeat;
+        overflow-y:hidden;
+        padding:20px;
+        height: 3000px;
+        position:fixed;
+        min-width:100px;
+        max-width:100px;
+        width:100px;
+    }
+    div.rightpanel {
+        background:white;
+        padding-left:100px;
+    }
+    div.controls {
+        margin:20px auto 20px;
+        text-align: left;   
+    }
+    div.outputarea {
+        background-color:#fff;
+        margin:20px 300px 20px 0px;
+        text-align: left;
+        font-family: 'OpenDyslexic', monospace, sans-serif;
+        font-size: 230%;
+        line-height: 2em;
+        color:black;        
+    }
+    textarea.inputarea {
+        position:fixed;
+        top:30%;
+        right:20px;
+        width:400px;
+        height:300px;
+    }
+    textarea.workarea {
+        display:none;
+    }
+    
+    div.outputarea.color .line.even
+    {
+        color:#905200;
+    }
+    div.outputarea.color .line.odd
+    {
+        color:#529000;
+    }
+    
+    div.outputarea.color .line.even span.vowel
+    {
+        color:#b27411;
+    }
+    
+    div.outputarea.color .line.odd span.vowel
+    {
+        color:#74b211;
+    }
+}
+
+
+@media print 
+{
+    div.outputarea {
+        margin:20px;        
+    }
+    
+    div.outputarea.color .line.even
+    {
+        color:#905200;
+    }
+    div.outputarea.color .line.odd
+    {
+        color:#529000;
+    }
+    
+    div.outputarea.color .line.even span.vowel
+    {
+        color:#b27411;
+    }
+    
+    div.outputarea.color .line.odd span.vowel
+    {
+        color:#74b211;
+    }    
+    
+    .noPrint 
+    {
+        display:none;
+    }
+}
